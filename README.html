@@ -13,15 +13,15 @@
     <p><tt>This&nbsp;uses&nbsp;HMAC&nbsp;as&nbsp;the&nbsp;basis&nbsp;of&nbsp;a&nbsp;commitment&nbsp;protocol.<br>
 The&nbsp;person&nbsp;with&nbsp;the&nbsp;crush&nbsp;creates&nbsp;a&nbsp;string&nbsp;with&nbsp;their<br>
 name&nbsp;and&nbsp;an&nbsp;identifier&nbsp;of&nbsp;their&nbsp;crush.&nbsp;They&nbsp;then&nbsp;generate<br>
-a&nbsp;key,&nbsp;preferrably&nbsp;a&nbsp;256-bit&nbsp;random&nbsp;value,&nbsp;and&nbsp;keep&nbsp;this<br>
+a&nbsp;key,&nbsp;preferably&nbsp;a&nbsp;256-bit&nbsp;random&nbsp;value,&nbsp;and&nbsp;keep&nbsp;this<br>
 secret.&nbsp;They&nbsp;then&nbsp;publish&nbsp;the&nbsp;format&nbsp;of&nbsp;the&nbsp;string&nbsp;along<br>
-with&nbsp;the&nbsp;result&nbsp;of&nbsp;the&nbsp;string&nbsp;with&nbsp;the&nbsp;identifer&nbsp;from<br>
+with&nbsp;the&nbsp;result&nbsp;of&nbsp;the&nbsp;string&nbsp;with&nbsp;the&nbsp;identifier&nbsp;from<br>
 the&nbsp;HMAC&nbsp;using&nbsp;the&nbsp;secret&nbsp;key.<br>
 &nbsp;<br>
 This&nbsp;process&nbsp;allows&nbsp;for&nbsp;a&nbsp;person&nbsp;to&nbsp;commit&nbsp;to&nbsp;a&nbsp;crush&nbsp;and<br>
 then&nbsp;they&nbsp;can&nbsp;reveal&nbsp;who&nbsp;their&nbsp;crush&nbsp;is&nbsp;at&nbsp;a&nbsp;later&nbsp;date<br>
-along&nbsp;with&nbsp;the&nbsp;secret&nbsp;key.&nbsp;THe&nbsp;combination&nbsp;of&nbsp;the&nbsp;two&nbsp;can<br>
-be&nbsp;verfied&nbsp;by&nbsp;replicating&nbsp;the&nbsp;hash&nbsp;process.&nbsp;This&nbsp;allows&nbsp;any<br>
+along&nbsp;with&nbsp;the&nbsp;secret&nbsp;key.&nbsp;The&nbsp;combination&nbsp;of&nbsp;the&nbsp;two&nbsp;can<br>
+be&nbsp;verified&nbsp;by&nbsp;replicating&nbsp;the&nbsp;hash&nbsp;process.&nbsp;This&nbsp;allows&nbsp;any<br>
 third&nbsp;party&nbsp;to&nbsp;verify&nbsp;that&nbsp;the&nbsp;person's&nbsp;revealed&nbsp;crush&nbsp;was<br>
 the&nbsp;same&nbsp;as&nbsp;identified&nbsp;in&nbsp;the&nbsp;original&nbsp;instance&nbsp;where&nbsp;the<br>
 hash&nbsp;was&nbsp;created.<br>
@@ -64,7 +64,7 @@ Return&nbsp;n&nbsp;random&nbsp;bytes&nbsp;suitable&nbsp;for&nbsp;cryptographic&n
 <td width="100%"><strong>BLOCK_SIZE</strong> = 32<br>
 <strong>IPAD_BYTE</strong> = '6'<br>
 <strong>OPAD_BYTE</strong> = r'\'<br>
-<strong>argv</strong> = ['/usr/bin/pydoc2.7', '-w', 'README.html', 'crush-commit']<br>
+<strong>argv</strong> = ['/usr/bin/pydoc2.7', '-w', 'crush-commit']<br>
 <strong>stdin</strong> = &lt;open file '&lt;stdin&gt;', mode 'r'&gt;<br>
 <strong>stdout</strong> = &lt;open file '&lt;stdout&gt;', mode 'w'&gt;</td></tr></table>
 </body></html>

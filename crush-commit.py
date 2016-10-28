@@ -4,15 +4,15 @@
 This uses HMAC as the basis of a commitment protocol.
 The person with the crush creates a string with their
 name and an identifier of their crush. They then generate
-a key, preferrably a 256-bit random value, and keep this
+a key, preferably a 256-bit random value, and keep this
 secret. They then publish the format of the string along
-with the result of the string with the identifer from
+with the result of the string with the identifier from
 the HMAC using the secret key.
 
 This process allows for a person to commit to a crush and
 then they can reveal who their crush is at a later date
-along with the secret key. THe combination of the two can
-be verfied by replicating the hash process. This allows any
+along with the secret key. The combination of the two can
+be verified by replicating the hash process. This allows any
 third party to verify that the person's revealed crush was
 the same as identified in the original instance where the
 hash was created.
@@ -51,7 +51,7 @@ def printHelp():
         commit  interactively create a commitment
         check   check a revealed commitment
 
-    Paramaters
+    Parameters
         key         file where the key and secret are stored
         commitment  file where the commitment is stored
 
