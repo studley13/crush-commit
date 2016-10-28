@@ -124,8 +124,8 @@ def hmac(message, key):
     iKeyPad = xorBytes((IPAD_BYTE * BLOCK_SIZE), key)
 
     # Hash the message with the key
-    innerHash = sha256(iKeyPad + message).digest()
-    outerHash = sha256(oKeyPad + message).digest()
+    innerHash = sha256(iKeyPad + message  ).digest()
+    outerHash = sha256(oKeyPad + innerHash).digest()
 
     return outerHash
 
